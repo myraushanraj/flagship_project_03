@@ -7,6 +7,10 @@ import CarouselNew from '../components/CarouselNew';
 import AuthorList from '../components/authorList';
 import Footer from '../components/footer';
 import { createGlobalStyle } from 'styled-components';
+import Reveal from 'react-awesome-reveal';
+import { keyframes } from "@emotion/react";
+import Section2 from './customPage/Section2';
+
 
 const GlobalStyles = createGlobalStyle`
   header#myHeader .logo .d-block{
@@ -108,6 +112,7 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 
+
 const homeone= () => (
   <div>
   <GlobalStyles />
@@ -116,7 +121,8 @@ const homeone= () => (
          <SliderMainParticle/>
       </section>
 
-      <section className='container no-bottom'>
+<Section2 />
+      {/* <section className='container no-bottom'>
         <div className="row">
             <div className="col-lg-2 col-sm-4 col-6 mb30">
                 <span className="box-url">
@@ -160,13 +166,13 @@ const homeone= () => (
                 </span>
             </div>                                       
         </div>
-      </section>
+      </section> */}
 
       <section className='container no-top no-bottom'>
         <div className='row'>
           <div className="spacer-double"></div>
           <div className='col-lg-12 mb-2'>
-              <h2>New Items</h2>
+              <h2>#FLAGPRENEURS</h2>
           </div>
         </div> 
         <CarouselNew/>

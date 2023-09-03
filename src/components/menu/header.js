@@ -109,7 +109,7 @@ const Header= function() {
                     alt="#"
                   />
                   <img
-                    src="./img/logo-light.png"
+                    src="https://flagship.club/assets/image/logo.png"
                     className="img-fluid d-none"
                     alt="#"
                   />
@@ -117,9 +117,9 @@ const Header= function() {
               </div>
           </div>
 
-          <div className='search'>
+          {/* <div className='search'>
             <input id="quick_search" className="xs-hide" name="quick_search" placeholder="search item here..." type="text" />
-          </div>
+          </div> */}
                     
               <BreakpointProvider>
                 <Breakpoint l down>
@@ -135,9 +135,9 @@ const Header= function() {
                         {openMenu && (
                           <div className='item-dropdown'>
                             <div className="dropdown" onClick={closeMenu}>
-                              <NavLink to="/" onClick={() => btn_icon(!showmenu)}>Homepage</NavLink>
-                              <NavLink to="/home1" onClick={() => btn_icon(!showmenu)}>Homepage 1</NavLink>
-                              <NavLink to="/home2" onClick={() => btn_icon(!showmenu)}>Homepage 1</NavLink>
+                              <NavLink to="/" onClick={() => btn_icon(!showmenu)}>Home</NavLink>
+                              {/* <NavLink to="/home1" onClick={() => btn_icon(!showmenu)}>Homepage 1</NavLink>
+                              <NavLink to="/home2" onClick={() => btn_icon(!showmenu)}>Homepage 1</NavLink> */}
                             </div>
                           </div>
                         )}
@@ -223,108 +223,57 @@ const Header= function() {
 
                 <Breakpoint xl>
                   <div className='menu'>
-                    <div className='navbar-item'>
-                        <div ref={ref}>
-                          <div className="dropdown-custom dropdown-toggle btn" 
-                             onMouseEnter={handleBtnClick} onMouseLeave={closeMenu}>
-                            Home
-                            <span className='lines'></span>
-                            {openMenu && (
-                            <div className='item-dropdown'>
-                              <div className="dropdown" onClick={closeMenu}>
-                                <NavLink to="/">Homepage</NavLink>
-                                <NavLink to="/home1">Homepage 1</NavLink>
-                                <NavLink to="/home2">Homepage 2</NavLink>
-                              </div>
-                            </div>
-                          )}
-                          </div>
-                          
-                        </div>
-                    </div>
-                    <div className='navbar-item'>
-                      <div ref={ref1}>
-                          <div className="dropdown-custom dropdown-toggle btn" 
-                             onMouseEnter={handleBtnClick1} onMouseLeave={closeMenu1}>
-                            Explore
-                            <span className='lines'></span>
-                            {openMenu1 && (
-                            <div className='item-dropdown'>
-                              <div className="dropdown" onClick={closeMenu1}>
-                              <NavLink to="/explore">Explore</NavLink>
-                              <NavLink to="/explore2">Explore 2</NavLink>
-                              <NavLink to="/rangking">Rangking</NavLink>
-                              <NavLink to="/colection">Collection</NavLink>
-                              <NavLink to="/ItemDetail">Items Details</NavLink>
-                              <NavLink to="/Auction">Live Auction</NavLink>
-                              <NavLink to="/helpcenter">Help Center</NavLink>
-                              </div>
-                            </div>
-                          )}
-                          </div>
-                          
-                        </div>
-                    </div>
-                    <div className='navbar-item'>
-                      <div ref={ref2}>
-                          <div className="dropdown-custom dropdown-toggle btn" 
-                             onMouseEnter={handleBtnClick2} onMouseLeave={closeMenu2}>
-                            Pages
-                            <span className='lines'></span>
-                            {openMenu2 && (
-                            <div className='item-dropdown'>
-                              <div className="dropdown" onClick={closeMenu2}>
-                              <NavLink to="/Author">Author</NavLink>
-                              <NavLink to="/wallet">Wallet</NavLink>
-                              <NavLink to="/create">Create</NavLink>
-                              <NavLink to="/news">News</NavLink>
-                              <NavLink to="/works">Gallery</NavLink>
-                              <NavLink to="/login">login</NavLink>
-                              <NavLink to="/loginTwo">login 2</NavLink>
-                              <NavLink to="/register">Register</NavLink>
-                              <NavLink to="/contact">Contact Us</NavLink>
-                              </div>
-                            </div>
-                          )}
-                          </div>
-                        </div>
-                    </div>
-                    <div className='navbar-item'>
-                      <NavLink to="/activity">
-                      Activity
+                  <div className='navbar-item'>
+                      <NavLink to="/">
+                  Home
                       <span className='lines'></span>
                       </NavLink>
                     </div>
                     <div className='navbar-item'>
-                      <div ref={ref3}>
-                          <div className="dropdown-custom dropdown-toggle btn" 
-                             onMouseEnter={handleBtnClick3} onMouseLeave={closeMenu3}>
-                            Elements
-                            <span className='lines'></span>
-                            {openMenu3 && (
-                            <div className='item-dropdown'>
-                              <div className="dropdown" onClick={closeMenu3}>
-                              <NavLink to="/elegantIcons">Elegant Icon</NavLink>
-                              <NavLink to="/etlineIcons">Etline Icon</NavLink>
-                              <NavLink to="/fontAwesomeIcons">Font Awesome Icon</NavLink>
-                              <NavLink to="/accordion">Accordion</NavLink>
-                              <NavLink to="/alerts">Alerts</NavLink>
-                              <NavLink to="/price">Pricing Table</NavLink>
-                              <NavLink to="/progressbar">Progess Bar</NavLink>
-                              <NavLink to="/tabs">Tabs</NavLink>
-                              </div>
-                            </div>
-                          )}
-                          </div>
-                        </div>
+                      <NavLink to="/">
+                      Flagship Journey
+                      <span className='lines'></span>
+                      </NavLink>
                     </div>
+                    <div className='navbar-item'>
+                      <NavLink to="/">
+                      Our Ecommerce
+                      <span className='lines'></span>
+                      </NavLink>
+                    </div>
+                    <div className='navbar-item'>
+                      <NavLink to="/">
+                      Reviews
+                      <span className='lines'></span>
+                      </NavLink>
+                    </div>
+                 
+                    <div className='navbar-item'>
+                      <NavLink to="/">
+                      Our Offerings
+                      <span className='lines'></span>
+                      </NavLink>
+                    </div>
+                    <div className='navbar-item'>
+                      <NavLink to="/">
+                      Calendly Event
+                      <span className='lines'></span>
+                      </NavLink>
+                    </div>
+                    <div className='navbar-item'>
+                      <NavLink to="/">
+                      FAQs
+                      <span className='lines'></span>
+                      </NavLink>
+                    </div>
+                  
                   </div>
                 </Breakpoint>
               </BreakpointProvider>
 
-              <div className='mainside'>
+              {/* <div className='mainside'>
                 <NavLink to="/wallet" className="btn-main">Connect Wallet</NavLink>
-              </div>
+              </div> */}
                   
       </div>
 

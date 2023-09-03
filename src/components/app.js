@@ -64,10 +64,10 @@ const app= () => (
     <Header/>
       <PosedRouter>
       <ScrollTop path="/">
-        <Home exact path="/">
-          <Redirect to="/home" />
-        </Home>
-        <Home1 path="/home1" />
+        <Home2 exact path="/">
+          <Redirect to="/home2" />
+        </Home2>
+        {/* <Home1 path="/home1" />
         <Home2 path="/home2" />
         <Explore path="/explore" />
         <Explore2 path="/explore2" />
@@ -93,7 +93,7 @@ const app= () => (
         <Accordion path="/accordion" />
         <Alerts path="/alerts" />
         <Progressbar path="/progressbar" />
-        <Tabs path="/tabs" />
+        <Tabs path="/tabs" /> */}
         </ScrollTop>
       </PosedRouter>
     <ScrollToTopBtn />
