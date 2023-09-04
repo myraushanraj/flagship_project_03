@@ -34,6 +34,9 @@ const slidermainparticle= () => (
               {/* <h6> <span className="text-uppercase color">Gigaland Market</span></h6> */}
               <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={900} triggerOnce>
               <h1 className="col-white">Fostering Next Generation Entrepreneurs  </h1>
+              {/* <form>
+                <input/>
+              </form> */}
               </Reveal>
               <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={900} triggerOnce>
               {/* <p className="lead col-white">
@@ -73,6 +76,8 @@ const slidermainparticle= () => (
                       </div>
               </div> */}
               </Reveal>
+
+              
           </div>
           <div className="col-md-6 xs-hide">
           <Reveal className='onStep d-inline' keyframes={inline} delay={300} duration={1200} triggerOnce>

@@ -91,7 +91,8 @@ const Section2 = ()=>{
                 </span>
             </div>                                               
         </div>
-      </section>
+
+    </section>
     )
 }
 

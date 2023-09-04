@@ -10,6 +10,7 @@ import { createGlobalStyle } from 'styled-components';
 import Reveal from 'react-awesome-reveal';
 import { keyframes } from "@emotion/react";
 import Section2 from './customPage/Section2';
+import Ecommerce from './customPage/Ecommerce';
 
 
 const GlobalStyles = createGlobalStyle`
@@ -178,7 +179,7 @@ const homeone= () => (
         <CarouselNew/>
       </section>
 
-      <section className='container no-top no-bottom'>
+      {/* <section className='container no-top no-bottom'>
         <div className='row'>
           <div className="spacer-double"></div>
           <div className='col-lg-12'>
@@ -188,9 +189,9 @@ const homeone= () => (
             <AuthorList/>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className='container no-top no-bottom'>
+      {/* <section className='container no-top no-bottom'>
         <div className='row'>
           <div className="spacer-double"></div>
           <div className='col-lg-12 mb-2'>
@@ -200,7 +201,9 @@ const homeone= () => (
               <CarouselCollection/>
             </div>
           </div>
-      </section>
+      </section> */}
+
+      <Ecommerce />
 
       <section className='container no-top'>
         <div className='row'>
