@@ -26,31 +26,41 @@ const inline = keyframes`
    }
 `;
 
-const slidermainparticle= () => (
- <div className="container">
+const slidermainparticle = () => (
+  <div className="container">
     <div className="row align-items-center">
-          <div className="col-md-6">
-              <div className="spacer-single"></div>
-              {/* <h6> <span className="text-uppercase color">Gigaland Market</span></h6> */}
-              <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={900} triggerOnce>
-              <h1 className="col-white">Fostering Next Generation Entrepreneurs  </h1>
-              {/* <form>
+      <div className="col-md-6">
+        <div className="spacer-single"></div>
+        {/* <h6> <span className="text-uppercase color">Gigaland Market</span></h6> */}
+        <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={900} triggerOnce>
+          <h1 className="col-white">Fostering Next Generation Entrepreneurs  </h1>
+          {/* <form>
                 <input/>
               </form> */}
-              </Reveal>
-              <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={900} triggerOnce>
-              {/* <p className="lead col-white">
+        </Reveal>
+        <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={900} triggerOnce>
+          {/* <p className="lead col-white">
               Unit of data stored on a digital ledger, called a blockchain, that certifies a digital asset to be unique and therefore not interchangeable
               </p> */}
-              </Reveal>
-              <div className="spacer-10"></div>
-              <Reveal className='onStep d-inline' keyframes={inline} delay={800} duration={900} triggerOnce>
-              <span onClick={()=> window.open("#", "_self")} className="btn-main inline lead">Submit</span>
-              <div className="mb-sm-30"></div>
-              </Reveal>
+        </Reveal>
+        {/* <div className="spacer-10"></div>
+        <Reveal className='onStep d-inline' keyframes={inline} delay={800} duration={900} triggerOnce>
+          <span onClick={() => window.open("#", "_self")} className="btn-main inline lead">Submit</span>
+          <div className="mb-sm-30"></div>
+        </Reveal> */}
 
-              <Reveal className='onStep d-inline' keyframes={inline} delay={900} duration={1200} triggerOnce>
-              {/* <div className="row">
+        <div className="form-section">
+          <form className="nft-form">
+            <label for="name">Name</label>
+            <input type="name" id="name" placeholder="Full Name" name="name" />
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="e.g. name@xyz.com" name="email" />
+            <button class="submit">Submit</button>
+          </form>
+        </div>
+
+        <Reveal className='onStep d-inline' keyframes={inline} delay={900} duration={1200} triggerOnce>
+          {/* <div className="row">
                   <div className="spacer-single"></div>
                   <div className="row">
                           <div className="col-lg-4 col-md-6 col-sm-4 mb30">
@@ -75,20 +85,20 @@ const slidermainparticle= () => (
                           </div>
                       </div>
               </div> */}
-              </Reveal>
+        </Reveal>
 
-              
-          </div>
-          <div className="col-md-6 xs-hide">
-          <Reveal className='onStep d-inline' keyframes={inline} delay={300} duration={1200} triggerOnce>
-              <img src="./img/misc/women-with-vr.png" className="img-fluid" alt=""/>
-          </Reveal>
-          </div>
+
+      </div>
+      <div className="col-md-6 xs-hide">
+        <Reveal className='onStep d-inline' keyframes={inline} delay={300} duration={1200} triggerOnce>
+          <img src="./img/misc/women-with-vr.png" className="img-fluid" alt="" />
+        </Reveal>
       </div>
     </div>
+  </div>
 
-    
 
-    
+
+
 );
 export default slidermainparticle;

@@ -11,6 +11,7 @@ import Reveal from 'react-awesome-reveal';
 import { keyframes } from "@emotion/react";
 import Section2 from './customPage/Section2';
 import Ecommerce from './customPage/Ecommerce';
+import Offering from './customPage/Offering';
 
 
 const GlobalStyles = createGlobalStyle`
@@ -205,7 +206,9 @@ const homeone= () => (
 
       <Ecommerce />
 
-      <section className='container no-top'>
+      <Offering />
+
+      {/* <section className='container no-top'>
         <div className='row'>
             <div className="spacer-double"></div>
             <div className='col-lg-12 mb-3'>
@@ -213,7 +216,7 @@ const homeone= () => (
             </div>
             <FeatureBox/>
         </div>
-      </section>
+      </section> */}
 
     <Footer />
 

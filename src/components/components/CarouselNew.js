@@ -90,16 +90,13 @@ export default class Responsive extends Component {
           <Slider {...settings}>
             <CustomSlide className='itm' index={1}>
             <div className="d-item">
-              <div className="nft__item">
-                
-                 
+              <div className="nft__item">                
                   <div className="nft__item_wrap">
                     <Outer>
                       <span>
                           <video width="100%" height="240px" className="lazy nft__item_preview" controls >
                           <source src={"./img/author/flagship-video1.mp4"} type="video/mp4"/>
                           </video>
-
                       </span>
                     </Outer>
                   </div>
@@ -110,9 +107,7 @@ export default class Responsive extends Component {
 
             <CustomSlide className='itm' index={2}>
             <div className="d-item">
-              <div className="nft__item">
-                
-                 
+              <div className="nft__item">                
                   <div className="nft__item_wrap">
                     <Outer>
                       <span>
