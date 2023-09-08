@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Router, Location, Redirect } from '@reach/router';
 import ScrollToTopBtn from './menu/ScrollToTop';
 import Header from './menu/header';
@@ -32,6 +32,7 @@ import Progressbar from './pages/progressbar';
 import Tabs from './pages/tabs';
 
 import { createGlobalStyle } from 'styled-components';
+import Section1 from './pages/customPage/Section1';
 
 const GlobalStyles = createGlobalStyle`
   :root {
@@ -58,8 +59,18 @@ const PosedRouter = ({ children }) => (
   </Location>
 );
 
-const app= () => (
-  <div className="wraper">
+
+const App= () => {
+
+  const [loader, setLoader] = useState(true);
+setTimeout(()=>{
+  setLoader(false)
+}, 1000)
+
+return(
+<>
+ { loader && <Section1 />}
+ {!loader && <div className="wraper">
   <GlobalStyles />
     <Header/>
       <PosedRouter>
@@ -98,6 +109,9 @@ const app= () => (
       </PosedRouter>
     <ScrollToTopBtn />
     
-  </div>
-);
-export default app;
+  </div>}
+  </>
+)
+      };
+
+export default App;

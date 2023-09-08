@@ -4133,6 +4133,48 @@ img.img-rounded{
   height: auto;
 }
 
+.first-section {
+  background-color: #010101;
+  height: 100vh;
+  position: fixed;
+  z-index: 11;
+  width: 100%;
+}
+
+.first-section .heading {
+  margin-top: 80px;
+  font-family: Bungee;
+
+}
+
+.first-section .yellow {
+  color: #FFF309 !important;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+} 
+.vertical-center{
+  display: flex;
+  align-items: center;
+}
+
+.first-section .head-top {
+  color: #fff;
+    text-align: center;
+    font-family: Bungee;
+    font-size: 66px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.first-section img {
+  width: 264px;
+}
+
+.mt-200 {
+  margin-top: 200px;
+}
+
 
 @media screen and (max-width: 600px) {
   .form-section form {

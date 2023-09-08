@@ -1,5 +1,6 @@
 import React from 'react';
 import Particle from '../components/Particle';
+import Section1 from './customPage/Section1';
 import SliderMainParticle from '../components/SliderMainParticle';
 import FeatureBox from '../components/FeatureBox';
 import CarouselCollection from '../components/CarouselCollection';
@@ -12,6 +13,7 @@ import { keyframes } from "@emotion/react";
 import Section2 from './customPage/Section2';
 import Ecommerce from './customPage/Ecommerce';
 import Offering from './customPage/Offering';
+
 
 
 const GlobalStyles = createGlobalStyle`
@@ -120,6 +122,8 @@ const homeone= () => (
   <GlobalStyles />
       <section className="jumbotron no-bg" style={{backgroundImage: `url(${'./img/background/8.jpg'})`}}>
        <Particle/>
+    
+
          <SliderMainParticle/>
       </section>
 
@@ -219,6 +223,7 @@ const homeone= () => (
       </section> */}
 
     <Footer />
+    
 
   </div>
 );

@@ -1,5 +1,8 @@
 import Reveal from "react-awesome-reveal"
 import { keyframes } from "@emotion/react";
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
+
 
 const fadeInUp = keyframes`
   0% {
@@ -47,15 +50,17 @@ const Section2 = ()=>{
         <div className="row">
            
             <div className="col-md-6 mb30 heading-mt-mobile">
-                <span className="box-url">
-                    <Reveal className='onStep d-inline' keyframes={inline} delay={300} duration={1200} triggerOnce>
-              <img src="./img/misc/Neural-Networks.png" className="img-fluid" alt=""/>
-          </Reveal>
-                </span>
+                    <div>
+      <Calendar />
+    </div>
             </div> 
-            <div className="col-md-6 mb30">
+            <div className="col-md-6 mb30 vertical-center">
             <p className="lead heading-mt-200 col-white">
-            Let’s Chat, book a session and ignite your entrepreneurial journey today.  </p>
+            Let’s Chat,
+            <br/>
+            Book a session and ignite your entrepreneurial journey today.  </p>
+
+
             </div>                                              
         </div>
       </section>
